@@ -60,3 +60,11 @@ button {
   background-color: #eeeeee;
   border: 1px solid #888888;
 }
+
+#outputText2 {
+  color: darkblue;
+}
+
+.bold {
+  font-weight: bold;
+}
