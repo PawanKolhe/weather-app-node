@@ -24,16 +24,5 @@ Install dependencies
     
 Serve project
     
-    node src/app
+    npm run dev
     
----
-
-#### Live Reload
-
-You can install nodemon for live reloading
-
-    npm i -g nodemon
-    
-Run nodemon
-
-    nodemon src/app -e js,hbs
