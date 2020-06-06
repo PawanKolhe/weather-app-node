@@ -38,7 +38,6 @@ app.get("/about", (req, res) => {
   res.render("about", {
     title: "About",
     name: "Pawan Kolhe",
-    description: "Hi! I'm Pawan Kolhe."
   });
 });
 
