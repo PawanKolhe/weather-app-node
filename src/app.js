@@ -61,14 +61,14 @@ app.get("/weather", (req, res) => {
       return res.send({ error });
     }
 
-    forecast(latitude, longitude, (error, { weather_descriptions, temperature, precip } = {}) => {
+    forecast(latitude, longitude, (error, { weather_descriptions, temperature, precip, humidity } = {}) => {
       if (error) {
         return res.send({ error });
       }
 
       res.send({
         location,
-        forecast: `${weather_descriptions}. It is currently ${temperature}°C. There is ${precip}% chance of rain.`,
+        forecast: `${weather_descriptions}. It is currently ${temperature}°C. There is ${precip}% chance of rain. The humidity is ${humidity}.`,
         address: req.query.address
       });
     });
